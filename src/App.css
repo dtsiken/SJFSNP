@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-container input[type="number"],
+.input-container input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+#processInputs {
+  margin-bottom: 20px;
+}
+
+#results {
+  margin-top: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.container {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.input-container {
+  background-color: #ffffff;
+  padding: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.table-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.1);
+}
+
+.gantt-chart-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.task {
+  display: inline-block;
+  height: 60px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .input-container input[type="number"],
+  .input-container input[type="text"] {
+    width: 100%;
+  }
+
+
+  table,
+  th,
+  td {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  th {
+    font-size: 1em;
+  }
+
+  .task {
+    width: 50px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  table,
+  th,
+  td {
+    font-size: 0.8em;
+    padding: 4px;
+  }
+
+  th {
+    font-size: 0.9em;
+  }
+
+  .task {
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+  }
+}
