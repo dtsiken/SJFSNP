@@ -1,1 +1,1 @@
-Shortest Job First Non Preemptive Mode Build in React
+Shortest Job First Non Preemptive Scheduling Algorithm Build in React
